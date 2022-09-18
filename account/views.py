@@ -14,7 +14,7 @@ def register(request):
             messages.success(request, "Registration Successful.")
             return redirect(settings.LOGIN_REDIRECT_URL)
         else:
-            print(form)
+            #print(form)
             print("INvlaie fgorme.")
             print(form.errors)
             return render(request, 'registration/register.html', {'form':form})
