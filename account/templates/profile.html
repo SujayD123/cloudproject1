@@ -1,0 +1,27 @@
+<html>
+    <body>
+        {% if user.is_authenticated %}
+            <p>
+                First Name: {{user.first_name}}
+            </p>
+            <p>
+                Last Name: {{user.last_name}}
+            </p>
+            <p>
+                Email: {{user.email}}
+            </p>
+
+            <div class="registerLinkDiv">
+                <a href="/account/logout" class="registerLink">Log Out</a>
+            </div>
+        {% else %}
+            <div class="loginLinkDiv">
+                <a href="/account/login" class="loginLink"><span>Login</span></a>
+            </div>
+            <div class="registerLinkDiv">
+                <a href="/account/register" class="registerLink">Register</a>
+            </div>
+
+    {% endif %}
+    </body>
+</html>
