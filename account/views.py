@@ -15,8 +15,8 @@ def register(request):
             return redirect(settings.LOGIN_REDIRECT_URL)
         else:
             #print(form)
-            print("INvlaie fgorme.")
-            print(form.errors)
+            #print("INvlaie fgorme.")
+            #print(form.errors)
             return render(request, 'registration/register.html', {'form':form})
     form = RegistrationForm()
     return render(request = request, template_name = "registration/register.html", context={"form": form})
