@@ -30,6 +30,8 @@ ALLOWED_HOSTS = ["*"]
 LOGIN_REDIRECT_URL = "../profile"
 LOGOUT_REDIRECT_URL = "../profile"
 
+CSRF_TRUSTED_ORIGINS = ["http://ec2-54-221-45-100.compute-1.amazonaws.com"]
+
 # Application definition
 
 INSTALLED_APPS = [
